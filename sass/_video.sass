@@ -10,3 +10,16 @@
 .roadmap-media
   position: relative
   padding-bottom: 56.25%
+.intro
+  position: relative
+  max-height: 100vh
+  overflow: hidden
+  &::after
+    top: 0
+    left: 0
+    z-index: 2
+    content: ''
+    display: block
+    height: 100%
+    width: 100%
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
