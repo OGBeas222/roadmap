@@ -1,17 +1,57 @@
 .full-screen
+  background: none
   position: relative
   min-height: 100vh
   display: flex
   flex-direction: column
   padding: 50px 15px
-  &__body
-    position: relative
-    z-index: 2
+  &__container
+    max-width: 1000px
+    margin: 0 auto
+  &__wrapper
     display: flex
-    flex-direction: column
     justify-content: space-between
     align-items: center
-    text-transform: uppercase
+  &__secondary
+    background: none
+    margin: 0
+    top: 175px
+    right: 534px
+    font-size: 41px
+    color: #fff
+    z-index: 2
+    position: absolute
+    &--1
+      font-family: Roboto, sans-serif
+      color: #fff
+      background: none
+      position: absolute
+      z-index: 2
+      font-size: 34px
+      top: 380px
+      left: 367px
+    &--2
+      font-family: Roboto, sans-serif
+      color: #fff
+      background: none
+      position: absolute
+      z-index: 2
+      font-size: 34px
+      top: 586px
+      right: 308px
+    &--text
+  &__body
+    background: none
+    position: relative
+    z-index: 2
+    top: 57px
+    display: flex
+    flex-direction: column
+    flex: 1 1 auto
+    min-width: 222px
+    align-self: center
+
+    flex-wrap: wrap
   &__video
     position: absolute
     top: 0
@@ -20,16 +60,59 @@
     height: 100%
     object-fit: cover
   &__title
-    font-size: 50px
-    letter-spacing: 25px
+    background: none
+    display: flex
+    align-items: flex-end
+    justify-content: center
+    margin-bottom: 5px
+    &--1
+      font-family: Roboto, sans-serif
+      background: none
+      font-size: 36px
+      color: #FFF
+
+  &__text
+    display: flex
+    background: none
+    justify-content: center
+    align-self: center
+    font-size: 38px
+    min-width: 80px
+    min-height: 70px
     color: #ffffff
     font-weight: 700
     margin: 0 0 0 0
-  &__text
-    font-size: 18px
-    letter-spacing: 15px
-    color: #ffffff
-    font-weight: 500
+    border: solid 3px #fff
+    border-radius: 50%
+
+    &--2
+      font-family: Roboto, sans-serif
+      padding: 22px 30px
+      background: none
+      color: #ffffff
+      font-weight: 500
+  &__img
+    height: 50px
+    width: 50px
+    &--2
+      background: none
+      padding: 11px 16px
+      max-height: 87px
+  &__line
+    background: none
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &::after
+
+      content: ""
+
+      width: 3px
+      height: 105px
+      background-color: #FFFFFF
+
 .container
   background-color: #878787
   &__wrapper
@@ -38,3 +121,6 @@
     padding: 50 15px
     font-size: 18px
     line-height: 150%
+  .wrapper--secondary
+    max-width: 340px
+    max-height: 550px
